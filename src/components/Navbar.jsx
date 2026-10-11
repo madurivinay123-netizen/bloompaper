@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Sprout, ShoppingBag, User, Menu, X, Sparkles, Heart } from 'lucide-react';
+import { asset } from '../utils/assetHelper';
 
 export default function Navbar({ onOpenAuth, onOpenSampleKit }) {
   const [scrolled, setScrolled] = useState(false);
@@ -20,7 +21,7 @@ export default function Navbar({ onOpenAuth, onOpenSampleKit }) {
         <a href="#intro" className="brand-logo" title="BloomPaper — Plantable Seed Paper Invitations">
           <div className="logo-emblem-wrap">
             <img 
-              src="/bloompaper_logo.png" 
+              src={asset('/bloompaper_logo.png')} 
               alt="BloomPaper Botanical Seed Logo" 
               className="brand-logo-img" 
             />

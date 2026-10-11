@@ -3,6 +3,7 @@ import {
   Play, Pause, RotateCcw, Volume2, VolumeX, Maximize2, 
   Sparkles, Sprout, Download, ShieldCheck, CheckCircle2, Film
 } from 'lucide-react';
+import { asset } from '../utils/assetHelper';
 
 const scenesData = [
   {
@@ -12,7 +13,7 @@ const scenesData = [
     durationSeconds: 5,
     startSeconds: 0,
     endSeconds: 5,
-    image: "/video/scene1.jpg",
+    image: asset('/video/scene1.jpg'),
     narrative: "A luxurious wedding invitation card floats in warm cream ambiance. Decorated with Indian wedding motifs and gold borders, it opens smoothly revealing the celebration details.",
     badge: "00:00 - 00:05 • Scene 1",
     tagline: "ELEGANT 3D FLOATING INVITATION"
@@ -24,7 +25,7 @@ const scenesData = [
     durationSeconds: 5,
     startSeconds: 5,
     endSeconds: 10,
-    image: "/video/scene2.jpg",
+    image: asset('/video/scene2.jpg'),
     narrative: "The invitation information moves smoothly aside. From inside, a separate, thin rectangular piece of plantable seed paper emerges gracefully toward the camera.",
     badge: "00:05 - 00:10 • Scene 2",
     tagline: "PLANTABLE SEED PAPER REVEAL"
@@ -36,7 +37,7 @@ const scenesData = [
     durationSeconds: 5,
     startSeconds: 10,
     endSeconds: 15,
-    image: "/video/scene3.jpg",
+    image: asset('/video/scene3.jpg'),
     narrative: "Visible embedded non-GMO flower seeds integrated into cotton rag fibers. Personalized with a delicate gold heart, couple's names, and mini photograph.",
     badge: "00:10 - 00:15 • Scene 3",
     tagline: "EMBEDDED LIVING SEEDS MACRO"
@@ -48,7 +49,7 @@ const scenesData = [
     durationSeconds: 5,
     startSeconds: 15,
     endSeconds: 20,
-    image: "/video/scene4_planting.jpg",
+    image: asset('/video/scene4_planting.jpg'),
     narrative: "The entire seed paper is planted whole—never torn or folded. It rests on dark soil, covered lightly, and watered gently using a vintage watering can.",
     badge: "00:15 - 00:20 • Scene 4",
     tagline: "PLANT WHOLE • WATER WITH LOVE"
@@ -60,7 +61,7 @@ const scenesData = [
     durationSeconds: 9,
     startSeconds: 20,
     endSeconds: 29,
-    image: "/video/scene5.jpg",
+    image: asset('/video/scene5.jpg'),
     narrative: "Scientifically accurate botanical time-lapse: roots branch downward underground while a vigorous green sprout emerges with fresh cotyledons and leaves.",
     badge: "00:20 - 00:29 • Scene 5",
     tagline: "ROOTS & SPROUT TIME-LAPSE"
@@ -72,7 +73,7 @@ const scenesData = [
     durationSeconds: 6,
     startSeconds: 29,
     endSeconds: 35,
-    image: "/video/scene6.jpg",
+    image: asset('/video/scene6.jpg'),
     narrative: "A healthy plant grows near the sunlit window alongside the original wedding invitation. 'One Invitation. One Memory. One New Life. Don't Throw Away the Invitation. Plant It.'",
     badge: "00:29 - 00:35 • Scene 6",
     tagline: "ONE INVITATION. ONE MEMORY. ONE NEW LIFE."

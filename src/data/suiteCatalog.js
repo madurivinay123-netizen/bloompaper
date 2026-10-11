@@ -1,10 +1,12 @@
+import { asset } from '../utils/assetHelper';
+
 // Complete 3-Piece Invitation Suite Catalog
 // Each product consists of:
 // 1. Big Invitation Card Cover (Outer Jacket / Envelope)
 // 2. Information Paper Sheet (Inside Cover - Wedding Details & Itinerary)
 // 3. Plantable Seed Paper Sheet (Inside Card - Embedded with 1-2 living seeds)
 
-export const suiteCatalog = [
+const rawCatalog = [
   {
     id: "lotus-monogram",
     title: "Royal Lotus & Gold Monogram 3-Piece Suite",
@@ -498,3 +500,15 @@ export const suiteCatalog = [
     }
   }
 ];
+
+export const suiteCatalog = rawCatalog.map(suite => ({
+  ...suite,
+  image: asset(suite.image),
+  pieces: {
+    ...suite.pieces,
+    cover: {
+      ...suite.pieces.cover,
+      image: asset(suite.pieces.cover.image)
+    }
+  }
+}));

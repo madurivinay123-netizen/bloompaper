@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Sprout, Send, Heart, ShieldCheck, Mail, Lock, UserPlus, LogIn, ExternalLink } from 'lucide-react';
 import confetti from 'canvas-confetti';
+import { asset } from '../utils/assetHelper';
 
 export default function Footer({ onOpenAuth, onOpenSampleKit }) {
   const [newsletterEmail, setNewsletterEmail] = useState('');
@@ -61,7 +62,7 @@ export default function Footer({ onOpenAuth, onOpenSampleKit }) {
           <div className="footer-col brand-col">
             <div className="footer-logo">
               <img 
-                src="/bloompaper_logo.png" 
+                src={asset('/bloompaper_logo.png')} 
                 alt="BloomPaper Botanical Seed Logo" 
                 className="footer-logo-img" 
               />
